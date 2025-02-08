@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airways Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Airways</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <h2>Fly with Comfort and Safety</h2>
+        <p>Book your tickets now and explore the world.</p>
+        <a href="#booking" class="btn">Book Now</a>
+    </section>
+    
+    <section id="booking">
+        <h2>Book Your Flight</h2>
+        <form id="bookingForm">
+            <label for="from">From:</label>
+            <input type="text" id="from" name="from" required>
+            
+            <label for="to">To:</label>
+            <input type="text" id="to" name="to" required>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <button type="submit">Search Flights</button>
+        </form>
+        <p id="confirmationMessage" style="display:none; color: green;">Your flight has been booked successfully!</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Airways. All rights reserved.</p>
+        <p>-kashish</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
